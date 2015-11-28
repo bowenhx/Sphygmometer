@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeviceViewController">
+            <connections>
+                <outlet property="_btnCancel" destination="XB5-7L-MJT" id="n8b-O9-YJc"/>
+                <outlet property="_btnEdit" destination="nMK-5k-Hyw" id="5LN-JC-J6K"/>
+                <outlet property="_btnEmail" destination="loO-pG-KFe" id="nQW-ap-SY3"/>
+                <outlet property="_btnGPRS" destination="CyQ-Wp-UVL" id="Yj0-jr-z09"/>
+                <outlet property="_btnMeter" destination="3Ag-IP-1oj" id="NMW-f7-PYN"/>
+                <outlet property="_btnPush" destination="Ob4-Fz-ydz" id="HW2-Ed-czl"/>
+                <outlet property="_btnShare" destination="sQN-vC-6j6" id="DMy-FH-TlN"/>
+                <outlet property="_btnWeiXin" destination="QPz-CL-f70" id="hsM-Cz-jdH"/>
+                <outlet property="_labBluetooth" destination="PMi-Pv-aQq" id="l6P-My-ZQi"/>
+                <outlet property="_labUnit" destination="7I0-Qd-T04" id="bbh-ee-3a2"/>
+                <outlet property="_labValue" destination="UlN-Dc-yqj" id="cfd-Vg-7IP"/>
+                <outlet property="_labXueya" destination="lLj-xE-sMG" id="rxj-Dy-dMQ"/>
+                <outlet property="_viewShareBg" destination="hbj-lg-L3u" id="wFz-XP-NKF"/>
+                <outlet property="view" destination="iN0-l3-epB" id="csL-gR-zCP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="device_input_image.png" id="mUW-T0-1bJ">
+                    <rect key="frame" x="0.0" y="8" width="320" height="226"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="device_sc.png" id="RFm-f5-KKY">
+                    <rect key="frame" x="70" y="116" width="180" height="86"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="蓝牙设备" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PMi-Pv-aQq">
+                    <rect key="frame" x="39" y="20" width="77" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CyQ-Wp-UVL">
+                    <rect key="frame" x="163" y="8" width="157" height="92"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="titleEdgeInsets" minX="-6" minY="0.0" maxX="32" maxY="45"/>
+                    <inset key="imageEdgeInsets" minX="56" minY="40" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="GPRS设备" image="设备.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didSelectGPRSDeviceVC" destination="-1" eventType="touchUpInside" id="Ex3-r4-vcD"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="血压" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lLj-xE-sMG">
+                    <rect key="frame" x="28" y="127" width="48" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3Ag-IP-1oj">
+                    <rect key="frame" x="20" y="58" width="114" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="测量" image="测量图标.png" backgroundImage="测量按钮.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="测量按钮-1.png"/>
+                    <state key="highlighted" image="测量图标.png" backgroundImage="测量按钮-1.png"/>
+                    <connections>
+                        <action selector="didSelectPushMeterAction:" destination="-1" eventType="touchUpInside" id="ek0-i3-shl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sQN-vC-6j6">
+                    <rect key="frame" x="12" y="400" width="146" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="分 享" backgroundImage="分享按钮.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="分享按钮-1.png"/>
+                    <connections>
+                        <action selector="didSelectShareAction:" destination="-1" eventType="touchUpInside" id="fba-Zo-Z1A"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nMK-5k-Hyw">
+                    <rect key="frame" x="163" y="400" width="146" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="编 辑" backgroundImage="编辑按钮.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="编辑按钮-1.png"/>
+                    <connections>
+                        <action selector="didSelcetEditAction:" destination="-1" eventType="touchUpInside" id="6Zf-2C-sf8"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mmHg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7I0-Qd-T04">
+                    <rect key="frame" x="126" y="203" width="69" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UlN-Dc-yqj">
+                    <rect key="frame" x="107" y="172" width="107" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ob4-Fz-ydz">
+                    <rect key="frame" x="6" y="108" width="308" height="126"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="imageEdgeInsets" minX="264" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="一下箭头.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="一下箭头.png"/>
+                    <connections>
+                        <action selector="didSelectPushVCPageAction:" destination="-1" eventType="touchUpInside" id="cD5-dg-vF6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+        </view>
+        <view hidden="YES" contentMode="scaleToFill" id="hbj-lg-L3u">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="229"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享我的健康讯息" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="E0R-Sz-v2F">
+                    <rect key="frame" x="69" y="10" width="182" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QPz-CL-f70">
+                    <rect key="frame" x="11" y="47" width="298" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="微信分享" backgroundImage="微信分享按钮.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="微信分享按钮-1.png"/>
+                    <connections>
+                        <action selector="didSelectShareWeiXinAction:" destination="-1" eventType="touchUpInside" id="VyE-Te-PIM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="loO-pG-KFe">
+                    <rect key="frame" x="11" y="108" width="298" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="新浪微博分享" backgroundImage="微信分享按钮.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="微信分享按钮-1.png"/>
+                    <connections>
+                        <action selector="didSelectShareEmailAction:" destination="-1" eventType="touchUpInside" id="b1d-SO-vvj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XB5-7L-MJT">
+                    <rect key="frame" x="11" y="166" width="298" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="取消" backgroundImage="长按钮.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="长按钮1.png"/>
+                    <connections>
+                        <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="8Te-96-jLv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="720" y="89.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="device_input_image.png" width="320" height="226"/>
+        <image name="device_sc.png" width="180" height="82"/>
+        <image name="一下箭头.png" width="29" height="29"/>
+        <image name="分享按钮-1.png" width="146" height="39"/>
+        <image name="分享按钮.png" width="146" height="39"/>
+        <image name="微信分享按钮-1.png" width="298" height="49"/>
+        <image name="微信分享按钮.png" width="298" height="49"/>
+        <image name="测量图标.png" width="14" height="14"/>
+        <image name="测量按钮-1.png" width="102" height="29"/>
+        <image name="测量按钮.png" width="102" height="29"/>
+        <image name="编辑按钮-1.png" width="146" height="39"/>
+        <image name="编辑按钮.png" width="146" height="39"/>
+        <image name="设备.png" width="42" height="31"/>
+        <image name="长按钮.png" width="596" height="98"/>
+        <image name="长按钮1.png" width="596" height="98"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
